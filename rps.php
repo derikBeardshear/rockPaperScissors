@@ -7,6 +7,8 @@
 
     $option = $_POST['option'];
 
+    $cpu = cpu();
+
     function cpu() {
         
         $cpuOption = rand(1, 3);
@@ -14,8 +16,6 @@
     }
 
     if($option == 'Rock' or $option == 'rock') {
-        
-        $cpu = cpu();
         
         echo '<p>You have chosen ' . $option . '.';
         
@@ -43,8 +43,6 @@
 
     else if ($option == 'Paper' or $option == 'paper') {
         
-        $cpu = cpu();
-        
         echo '<p>You have chosen ' . $option . '.';
         
         if($cpu == 1) {
@@ -70,8 +68,6 @@
     }
     
     else if ($option == 'Scissors' or $option == 'scissors') {
-        
-        $cpu = cpu();
         
         echo '<p>You have chosen ' . $option . '.';
         
